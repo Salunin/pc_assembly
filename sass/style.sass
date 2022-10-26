@@ -1,14 +1,18 @@
 body
   background: url('../img/body.png')
   font-family: "Roboto", sans-serif
+.container
+  max-width: 1100px
+  margin: auto
 .header
   background: url('../img/header_bg.png') no-repeat top
   background-size: 100%
   height: 960px
   &__nav
+    margin-bottom: 180px
     &-wrapper
       padding-top: 38px
-      max-width: 1530px
+      max-width: 1730px
       margin: auto
       display: flex
       justify-content: space-between
@@ -36,3 +40,44 @@ body
       font-weight: 400
       font-size: 16px
       line-height: 150%
+  &__title
+    width: 800px
+    font-weight: 700
+    font-size: 64px
+    line-height: 140%
+    color: #FFFFFF
+    margin-bottom: 50px
+  &__item
+    display: flex
+    list-style: none
+    padding: 0
+    margin: 0
+    margin-bottom: 75px
+  &__list
+    display: flex
+    padding: 20px 30px
+    background-color: #121212
+    color: #fff
+    flex-direction: column
+    align-items: center
+    &:not(:last-child)
+      margin-right: 30px
+  &__counter
+    font-weight: 700
+    font-size: 36px
+    line-height: 140%
+  &__days
+    font-weight: 400
+    font-size: 16px
+    line-height: 140%
+    color: #fff
+    opacity: 0.4
+  &__button
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%)
+    border-radius: 50px
+    padding: 10px 30px
+    border: none
+    color: #fff
+    font-weight: 700
+    font-size: 16px
+    line-height: 150%
